@@ -1,0 +1,347 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: black;
+  font-family: Arial, sans-serif;
+  color: #CFB46D;
+}
+
+.prayer-flick-container {
+  width: 100%;
+  max-width: 600px;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #2C261D;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  border: 1px solid #CFB46D;
+  margin: 5px auto;
+  border-radius: 10px;
+}
+
+.game-card {
+  background-color: #3E3529;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.tooltip-text {
+  /*visibility: hidden;
+  opacity: 0;
+  background-color: #2C261D;
+  border: 1px solid #CFB46D;*/
+  color: #CFB46D;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  z-index: 1;
+  transition: opacity 0.3s;
+    display: table;
+    margin: 0 auto;
+}
+
+
+.tick-display {
+  font-size: 20px;
+  color: #CFB46D;
+  font-weight: bold;
+}
+
+.tutorial-text {
+  background-color: rgba(207, 180, 109, 0.1);
+  border: 1px solid #CFB46D;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+.prayer-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 20px 20px;
+}
+
+.prayer-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  outline: none;
+}
+
+.prayer-button:focus{
+  outline: none;
+  box-shadow: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.prayer-button img {
+  width: 50px;
+  height: 50px;
+}
+
+.score-grid {
+  background-color: #2C261D;
+  border: 1px solid #CFB46D;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.game-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.help-button {
+  color: #2C261D;
+  background-color: #CFB46D;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 5px;
+  position: fixed;
+  top: 20px;
+  right: 130px;
+  padding: 10px 20px;
+  }
+
+.help-button:hover {
+  background-color: #E0C57E;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  transform: scale(1.05);
+}
+
+.game-controls button {
+  padding: 5px 5px;
+  color: #2C261D;
+  background-color: #CFB46D;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.game-controls button:hover {
+  background-color: #E0C57E;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  transform: scale(1.05);
+}
+
+
+.game-modes {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.game-modes button {
+  padding: 10px 20px;
+  background-color: #5A4F3E;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #CFB46D;
+  transition: all 0.3s ease;
+}
+
+.game-modes button:hover {
+  background-color: #6B5D4A;
+}
+
+.game-modes button.active {
+  background-color: #CFB46D;
+  color: #2C261D;
+}
+
+.settings-button {
+  position: fixed;
+  top: 2%;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #CFB46D;
+  color: #2C261D;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.settings-button:hover {
+  background-color: #E0C57E;
+  color: #3E3529;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  transform: scale(1.05);
+}
+
+.settings-panel {
+  position: fixed;
+  top: 60px;
+  right: 20px;
+  background-color: #2C261D;
+  border: 1px solid #CFB46D;
+  color: #CFB46D;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  z-index: 30;
+}
+
+.settings-panel input[type="number"] {
+  background-color: #3E3529;
+  border: 1px solid #CFB46D;
+  color: #CFB46D;
+  padding: 5px;
+  max-width: 40px
+}
+
+h1 {
+  color: #00ffffad;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+h2 {
+    color: #CFB46D;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+    max-height: 15px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+h3 {
+  color: #CFB46D;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  margin: auto;
+}
+
+p {
+  margin: auto;
+}
+
+
+.settings-panel h2 {
+  margin-top: 0;
+}
+
+.settings-panel div {
+  margin-bottom: 10px;
+}
+
+.settings-panel label {
+  display: inline-block;
+  width: 150px;
+}
+
+.settings-panel input[type="number"] {
+  width: 60px;
+}
+
+@media (max-width: 600px) {
+  .prayer-flick-container {
+    padding: 10px;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .settings-button,
+  .settings-panel {
+    position: absolute;
+  }
+}
+
+/* Add subtle transitions for smoother interactions */
+button, input {
+  transition: all 0.3s ease;
+}
+
+.error-log {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(44, 38, 29, 0.8);
+  color: #ff4136;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  pointer-events: none;
+  z-index: 10;
+  transition: opacity 0.1s linear;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 90%;
+  width: fit-content;
+}
+
+@media (max-width: 600px) {
+  .error-log {
+    font-size: 10px;
+    max-width: 95%;
+  }
+}
+
+.footnote {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #2C261D;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  z-index: 20;
+}
+
+.footnote a {
+  color: #CFB46D;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footnote a:hover {
+  text-decoration: underline;
+}
+
+.tutorial-hints {
+  background-color: #3E3529;
+  border: 1px solid #CFB46D;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.tutorial-hints h3 {
+  color: #CFB46D;
+  margin-top: 0;
+}
+
+.tutorial-hints ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.tutorial-hints li {
+  color: #CFB46D;
+  margin-bottom: 5px;
+}
+
+hr{
+  border-color: #CFB46D;
+}
