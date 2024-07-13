@@ -420,22 +420,6 @@ const PrayerFlickGames = () => {
               />
           </div>
 <hr></hr>
-          <div className="tutorial-hints">
-              <h3>Hints&Tips:</h3>
-              <ul>
-                <li><b>Lag:</b> set it to the ms you have ingame or you will learn a useless timing. Check Runelite World Hopper.</li>
-                <li>Actions in OSRS always have a 1 tick delay - turn on your prayer on tick 3 for <b>single mode</b>. </li>
-                <li><b>Alternate</b>: swap prayers as soon as the other lights up. This defends against all blob damage.</li>
-                <li><b>1t</b>: turn on, then doubleclick once per tick. Pray should never turn off visually (ingame, here it might). </li>
-                <li><b>PP drained</b>: Rate is for Prot+Rigour. Dont look at number value(not accurate), only at whether it goes up. </li>
-                <li><b>Protip</b>: you can 1t flick on every mode. <b>Challenge</b>: Teach yourself to 1t alternate! </li>
-                <li>Got feedback/the cape? <a href="https://twitter.com/tomexrage" target="_blank" rel="noopener noreferrer">Let me know on Twitter!</a> </li>
-                <li> <a href="https://paypal.me/tomexlol" target="_blank" rel="noopener noreferrer">Click here to donate to help cover server costs</a> (or just to show appreciation ❤️)</li>
-                <li><b>Coming soon</b>: extra inferno specific tips & help <br></br>-customizable single+/alternate+ modes. flick multiple monsters in a custom sequence. 
-                <br></br> -5tick mode with colosseum assets. <br></br>-what else? let me know</li>
-              </ul>
-          </div>
-
 
         </div>
 
